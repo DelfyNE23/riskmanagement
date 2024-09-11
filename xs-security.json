@@ -1,11 +1,5 @@
 {
-  "xsappname": "riskmanagement",
-  "tenant-mode": "shared",
   "scopes": [
-    {
-      "name": "uaa.user",
-      "description": "UAA"
-    },
     {
       "name": "$XSAPPNAME.RiskViewer",
       "description": "RiskViewer"
@@ -14,24 +8,19 @@
       "name": "$XSAPPNAME.RiskManager",
       "description": "RiskManager"
     },
-    
     {
-      "name": "$XSAPPNAME.Admin",
-      "description": "Admin"
+      "name": "$XSAPPNAME.mtcallback",
+      "description": "Subscription via SaaS Registry",
+      "grant-as-authority-to-apps": [
+        "$XSAPPNAME(application,sap-provisioning,tenant-onboarding)"
+      ]
     }
   ],
   "attributes": [],
   "role-templates": [
     {
-      "name": "Token_Exchange",
-      "description": "UAA for risk-management user",
-      "scope-references": [
-        "uaa.user"
-      ]
-    },
-    {
       "name": "RiskViewer",
-      "description": "",
+      "description": "RiskViewer",
       "scope-references": [
         "$XSAPPNAME.RiskViewer"
       ],
@@ -39,31 +28,13 @@
     },
     {
       "name": "RiskManager",
-      "description": "",
+      "description": "RiskManager",
       "scope-references": [
         "$XSAPPNAME.RiskManager"
       ],
       "attribute-references": []
-    },
-    {
-      "name": "Admin",
-      "description": "generated",
-      "scope-references": [
-        "$XSAPPNAME.Admin"
-      ],
-      "attribute-references": []
     }
   ],
-  
-  "oauth2-configuration": {
-    "credential-types": [
-      "binding-secret",
-      "x509"
-    ],
-    "redirect-uris": [
-      "https://*.hana.ondemand.com/**",
-      "https://*.applicationstudio.cloud.sap/**"
-    ]
-    
-  }
+  "xsappname": "riskmanagement",
+  "tenant-mode": "dedicated"
 }
