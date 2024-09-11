@@ -1,0 +1,5 @@
+createdAt;createdBy;modifiedAt;modifiedBy;ID;title;prio;descr;impact;criticality;mitigations_ID
+2024-09-04T15:40:26+0200;max.mustermann@muster.com;2024-09-04T15:40:26+0200;delfyobama@noviseuforia.com;5671b992-8ca6-4bc9-a61c-ad40720491c6;CFR non-compliance;1;Recent restructuring might violate CFR code 71;10000;1;b9ad7478-c1f4-4d16-beb6-a81101713315
+2024-09-04T15:40:27+0200;max.mustermann@muster.com;2024-09-04T15:40:27+0200;delfyobama@noviseuforia.com;9b1d968a-12da-478e-bca9-479b312ec67a;SLA violation with possible termination cause;2;Repeated SLA violation on service delivery for two successive quarters;90000;2;efb650c6-c759-4de5-98c7-fb125283644e
+2024-09-04T15:40:29+0200;max.mustermann@muster.com;2024-09-04T15:40:29+0200;delfyobama@noviseuforia.com;24a2f708-5f39-4e33-bfb7-bd119db19f25;Shipment violating export control;1;Violation of export and trade control with unauthorized downloads;200000;2;cf8a73d6-e1d4-4908-b2a2-9e3dc7bdc9e4
+2024-09-04T15:40:31+0200;max.mustermann@muster.com;2024-09-04T15:40:31+0200;delfyobama@noviseuforia.com;00b698c2-572f-41c9-9e05-7c07f866d16e;title7450;3;descr674;250000;3;cf8a73d6-e1d4-4908-b2a2-9e3dc7bdc9e4
